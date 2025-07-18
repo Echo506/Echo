@@ -43,8 +43,8 @@ A variable is a space where we store data to use later.
 
 ```python
 nombre = "Wilfrido" #
-edad = 30
-altura = 1.75
+edad = 40
+altura = 1.70
 ````
 
   * You don't need to declare the type.
