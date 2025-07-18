@@ -2,7 +2,7 @@
 
 ## Welcome to my site.
 
-![https://www.linkedin.com/in/wilfridocostarica](Cyberpunk font.png)
+![https://www.linkedin.com/in/wilfridocostarica](Cyberpunkfont.png)
 
 Here I share 💻 projects, ✨aspias a 👨‍💻 systems engineer, 🧪 QA specialist, and 🛡️ cybersecurity professional.
 You’ll also find content on other valuable topics 🌐, with the goal of giving back to the community 🤝 and supporting everyone’s professional and personal growth equally 🚀.
