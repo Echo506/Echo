@@ -4,7 +4,7 @@
 
 ![https://www.linkedin.com/in/wilfridocostarica](Cyberpunkfont.png)
 
-Here I share 💻 projects, ✨aspirations as 👨‍💻 systems engineer, ⚖️ law proffessional, and 🛡️cybersecurity and IT professional.
+Here I share 💻 projects, ✨aspirations as 👨‍💻 systems engineer, ⚖️ law proffessional,🛡️cybersecurity and IT professional.
 You’ll also find valuable content on a range of other topics :octocat: with the aim of giving back to the community and 🤝supporting everyone’s professional and personal development.
 
 
