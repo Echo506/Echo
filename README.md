@@ -1,5 +1,3 @@
-
-```markdown
 # ¡Hola, soy Wilfrido! 👋
 
 ## Bienvenido a mi espacio.
