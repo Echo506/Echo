@@ -37,7 +37,7 @@ Here I share 💻 projects, ✨aspirations as a 👨‍💻 Systems Engineer, �
 
 | Language        | Description                                                                                               |
 | :-------------- | :-------------------------------------------------------------------------------------------------------- |
-| 🇫🇷 **French** | [Resources and projects related to the French language.](https://github.com/Echo506/French/blob/master/Git-French.md) |
-| 🇧🇷 **Portuguese** | [Content and learning in Portuguese.](https://github.com/Echo506/Portuguese/blob/main/GIT-Portuguese.md) |
-| 🇨🇳 **Chinese** | [My progress and resources in the Chinese language.](https://github.com/Echo506/Chinese/blob/master/GIT-Chinese.md) |
+| 🇫🇷 **French** | [Resources and projects related to the French language.](https://github.com/Echo506/Echo/blob/81712a2922d0c297f397c0059d90d6605c6d8c5d/French.md) |
+| 🇧🇷 **Portuguese** | [Content and learning in Portuguese.](https://github.com/Echo506/Echo/blob/81712a2922d0c297f397c0059d90d6605c6d8c5d/Portugues.md) |
+| 🇨🇳 **Chinese** | [My progress and resources in the Chinese language.]([https://github.com/Echo506/Chinese/blob/master/GIT-Chinese.md](https://github.com/Echo506/Echo/blob/81712a2922d0c297f397c0059d90d6605c6d8c5d/Chinesse.md) |
 ```
