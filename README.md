@@ -14,7 +14,7 @@ Aquí comparto 💻 proyectos, ✨aspiraciones como 👨‍💻 Ingeniero de Sis
 | Categoría             | Descripción                                                                                               |
 | :-------------------- | :-------------------------------------------------------------------------------------------------------- |
 | 🚀 **Git & GitHub** | [Explora mis recursos sobre control de versiones y colaboración.](https://github.com/Echo506/Echo/blob/99369e5e146e726c46f271888d7600ef2810af24/Git%7CGithub.md)
-| 🐍 **Python** | [Descubre mis proyectos y scripts en Python.](https://github.com/Echo506/Python/blob/main/GIT-Python.md)         |
+| 🐍 **Python** | [Descubre mis proyectos y scripts en Python.](https://github.com/Echo506/Echo/blob/75907a1e2a0da9c34692243372906509d9b2b30b/Python.md)         |
 | 🗄️ **SQL** | [Sumérgete en mis bases de datos y consultas SQL.](https://github.com/Echo506/SQL/blob/main/Git_SQL.md)             |
 | 📊 **Splunk** | [Análisis de datos y seguridad con Splunk.](https://github.com/Echo506/Splunk/blob/main/Git-Splunk.md)          |
 | ⚔️ **Metasploit** | [Herramientas y técnicas para pruebas de penetración.](https://github.com/Echo506/Metasploit/blob/main/Git-Metasploit.md) |
