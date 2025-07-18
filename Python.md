@@ -1,0 +1,1364 @@
+# 📋 Note:
+
+My purpose with this Python course is to start from the very basics, so that those who are new to the field can acquire their first knowledge and progress to developing their own projects. It's always valuable to review the fundamentals, and in the process, one often ends up learning something new.
+
+---
+
+# **Python**
+
+## **Characteristics**
+
+* Multiple uses
+* High-level
+* Dynamically typed
+* Object-oriented
+* Interpreted
+
+## **History**
+
+You can find more about the history of Python on [Wikipedia](https://en.wikipedia.org/wiki/History_of_Python)
+
+## **Installation**
+
+Download Python from its [Official Website](https://www.python.org/)
+
+### **Executing and compiling a program with Python**
+
+Python is an **interpreted language**; it is not compiled like C or Java. The code is executed line by line using the **Python interpreter**.
+
+**How to run a program:**
+
+1.  Create a file with a `.py` extension, for example: `my_program.py`
+2.  Run it from the terminal:
+
+    ```bash
+    python mi_programa.py
+    ```
+
+---
+
+### **Variables in Python**
+
+A variable is a space where we store data to use later.
+
+```python
+nombre = "Wilfrido" #
+edad = 30
+altura = 1.75
+````
+
+  * You don't need to declare the type.
+  * The type is automatically assigned according to the value.
+
+-----
+
+### **String manipulation**
+
+A string is text enclosed in quotes. You can perform many operations:
+
+```python
+mensaje = "Hello World"
+print(mensaje.upper())      # HELLO WORLD
+print(mensaje.lower())      # hello world
+print(len(mensaje))         # 10
+print(mensaje[0])           # H
+print(mensaje[-1])          # d
+print(mensaje[0:5])         # Hello
+```
+
+You can also concatenate:
+
+```python
+nombre = "Wilfrido" #
+saludo = "Hello " + nombre
+print(saludo)  # Hello Wilfrido #
+```
+
+-----
+
+### **Reserved words**
+
+These are words that **you cannot use as variable names** because they have a special meaning in Python.
+
+Examples:
+
+```python
+if, else, for, while, def, return, import, class, try, except, True, False
+```
+
+⚠️ **You cannot do this:**
+
+```python
+def = 5   # ❌ Error
+```
+
+-----
+
+### **Arithmetic operators**
+
+Used for mathematical operations:
+
+```python
+a = 10
+b = 3
+
+print(a + b)  # Addition → 13
+print(a - b)  # Subtraction → 7
+print(a * b)  # Multiplication → 30
+print(a / b)  # Division (float) → 3.333...
+print(a // b) # Integer division → 3
+print(a % b)  # Modulus (remainder) → 1
+print(a ** b) # Exponentiation → 1000
+```
+
+-----
+
+### **Comments in Python**
+
+These are lines that are not executed; they serve to explain the code.
+
+```python
+# This is a single-line comment
+
+"""
+This is a multi-line comment
+(docstring)
+"""
+```
+
+-----
+
+### **Data types**
+
+Python has several data types:
+
+```python
+integer = 10            # int
+decimal = 3.14         # float
+text = "Hello"         # str
+boolean = True        # bool
+list_example = [1, 2, 3]      # list
+tuple_example = (1, 2, 3)      # tuple
+dictionary_example = {"a":1}  # dict
+```
+
+You can check the type with `type()`:
+
+```python
+print(type(integer))  # <class 'int'>
+```
+
+-----
+
+### **Input from the keyboard**
+
+We use the `input()` function:
+
+```python
+name = input("What is your name? ")
+print("Hello, " + name)
+```
+
+Everything entered with `input()` is **text (str)**. If you want a number:
+
+```python
+age = int(input("How old are you? "))
+```
+
+-----
+
+### **Conditional statements `if`**
+
+Allow making decisions:
+
+```python
+age = int(input("How old are you? "))
+
+if age >= 18:
+    print("You are of legal age")
+else:
+    print("You are underage")
+```
+
+You can also use `elif` (else if):
+
+```python
+grade = 85
+
+if grade >= 90:
+    print("Excellent")
+elif grade >= 70:
+    print("Approved")
+else:
+    print("Failed")
+```
+
+-----
+
+### **Conditional statements `if else`**
+
+Allow executing one action if a condition is met (`if`), and another if it is not (`else`).
+
+```python
+age = 17
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote yet")
+```
+
+-----
+
+### **Conditional statements `elif`**
+
+Used when there are **more than two possible conditions**. It's a combination of `if` and `else`.
+
+```python
+grade = 85
+
+if grade >= 90:
+    print("Excellent")
+elif grade >= 70:
+    print("Approved")
+else:
+    print("Failed")
+```
+
+-----
+
+### **Nested statements**
+
+This is when an `if` statement is placed inside another `if` statement.
+
+```python
+age = 20
+nationality = "costarricense"
+
+if age >= 18:
+    if nationality == "costarricense":
+        print("Can vote in Costa Rica")
+    else:
+        print("Not Costa Rican")
+else:
+    print("Is underage")
+```
+
+-----
+
+### **Relational operators**
+
+Used to compare values. They return `True` or `False`.
+
+| Operator | Meaning           |
+| -------- | ----------------- |
+| `==`     | Equal             |
+| `!=`     | Not equal         |
+| `>`      | Greater than      |
+| `<`      | Less than         |
+| `>=`     | Greater than or equal to |
+| `<=`     | Less than or equal to |
+
+```python
+print(5 == 5)  # True
+print(3 != 4)  # True
+print(10 > 8)  # True
+```
+
+-----
+
+### **Logical operators**
+
+Allow combining multiple conditions:
+
+| Operator | Meaning                   |
+| -------- | ------------------------- |
+| `and`    | And (both true)           |
+| `or`     | Or (one true)             |
+| `not`    | Not (negates the condition) |
+
+```python
+age = 25
+city = "San José"
+
+if age >= 18 and city == "San José":
+    print("Can register")
+
+if age < 18 or city != "San José":
+    print("Does not meet requirements")
+
+if not age < 18:
+    print("Is of legal age")
+```
+
+-----
+
+### **Assignment operators**
+
+Used to assign or update values in a variable.
+
+```python
+x = 5       # Assignment
+x += 2      # Add and assign → x = x + 2
+x -= 1      # Subtract and assign
+x *= 3      # Multiply and assign
+x /= 2      # Divide and assign
+```
+
+-----
+
+### **`end` and `sep` parameters**
+
+Used in the `print()` function to **modify the end of the line** (`end`) or the **separator** between elements (`sep`).
+
+```python
+# end prevents a new line
+print("Hello", end=" ")
+print("World")  # Result: Hello World
+
+# sep changes the separator between words
+print("Python", "is", "great", sep="-")  # Result: Python-is-great
+```
+
+-----
+
+### **`while` loop**
+
+Executes a block of code **as long as** a condition is true.
+
+```python
+counter = 1
+
+while counter <= 5:
+    print("Number:", counter)
+    counter += 1
+```
+
+⚠️ **Caution:** If the condition never becomes `False`, the loop will be infinite.
+
+-----
+
+### **`continue` and `break` statements**
+
+  * `continue`: skips to the next iteration.
+  * `break`: terminates the loop.
+
+<!-- end list -->
+
+```python
+# Example of continue
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)  # Prints: 1, 2, 4, 5
+
+# Example of break
+for i in range(1, 6):
+    if i == 4:
+        break
+    print(i)  # Prints: 1, 2, 3
+```
+
+-----
+
+### **`len()` function**
+
+Returns the **length (number of elements)** of a string, list, tuple, etc.
+
+```python
+text = "Python"
+print(len(text))  # 6
+
+list_example = [1, 2, 3, 4]
+print(len(list_example))  # 4
+```
+
+-----
+
+### **Concatenation with `format()`**
+
+Allows inserting variables into a string using curly braces `{}`.
+
+```python
+name = "Wilfrido" #
+age = 30
+
+message = "Hello, my name is {} and I am {} years old".format(name, age)
+print(message)
+```
+
+You can also use by position or name:
+
+```python
+message = "Hello, {0}. You are {1} years old.".format(name, age)
+message = "Hello, {n}. You are {e} years old.".format(n=name, e=age)
+```
+
+-----
+
+### **Concatenation with `f-strings`**
+
+More modern and readable form (Python 3.6+).
+
+```python
+name = "Wilfrido" #
+age = 30
+
+message = f"Hello, my name is {name} and I am {age} years old"
+print(message)
+```
+
+-----
+
+### **`strip()` method**
+
+Removes whitespace **from the beginning and end** of a string.
+
+```python
+text = "  Hello world  "
+print(text.strip())  # "Hello world"
+```
+
+-----
+
+### **`rstrip()` and `lstrip()` methods**
+
+  * `rstrip()`: removes spaces only from the end.
+  * `lstrip()`: removes spaces only from the beginning.
+
+<!-- end list -->
+
+```python
+text = "  Hello world  "
+print(text.rstrip())  # "  Hello world"
+print(text.lstrip())  # "Hello world  "
+```
+
+-----
+
+### **`istitle()` and `title()` methods**
+
+  * `istitle()`: checks if each word starts with a capital letter.
+  * `title()`: converts a string so that each word starts with a capital letter.
+
+<!-- end list -->
+
+```python
+phrase = "Hello World"
+print(phrase.istitle())  # True
+
+phrase2 = "hello world"
+print(phrase2.title())   # "Hello World"
+```
+
+-----
+
+### **`islower()`, `lower()`, `isupper()`, `upper()` methods**
+
+  * `lower()`: converts to lowercase.
+  * `islower()`: checks if everything is in lowercase.
+  * `upper()`: converts to uppercase.
+  * `isupper()`: checks if everything is in uppercase.
+
+<!-- end list -->
+
+```python
+text = "Hello"
+
+print(text.lower())     # "hello"
+print(text.islower())   # False
+print(text.upper())     # "HOLA"
+print(text.isupper())   # False
+```
+
+-----
+
+### **`swapcase()` method**
+
+Swaps uppercase for lowercase and vice versa.
+
+```python
+text = "Hello World"
+print(text.swapcase())  # "hELLO wORLD"
+```
+
+-----
+
+### **`capitalize()` method**
+
+Converts only the **first letter** of the text to uppercase.
+
+```python
+text = "hello world"
+print(text.capitalize())  # "Hello world"
+```
+
+-----
+
+### **`center()`, `ljust()`, `rjust()` methods**
+
+Allow **aligning text** by adding spaces (or custom characters).
+
+```python
+text = "Python"
+
+print(text.center(10))     # "  Python  "
+print(text.center(10, "*"))# "**Python**"
+
+print(text.ljust(10))      # "Python    "
+print(text.rjust(10))      # "    Python"
+```
+
+-----
+
+### **`count()` method**
+
+Counts how many times a **character or word** appears within the string.
+
+```python
+phrase = "Hello world world"
+print(phrase.count("world"))  # 2
+print(phrase.count("o"))      # 3
+```
+
+-----
+
+### **`startswith()` and `endswith()` methods**
+
+Check if a string **starts** or **ends** with a specific text. They return `True` or `False`.
+
+```python
+text = "Hello world"
+
+print(text.startswith("Hello"))  # True
+print(text.endswith("world"))   # True
+```
+
+-----
+
+### **Substrings**
+
+A **substring** is a **part** of a string, which can be obtained using **slicing**.
+
+```python
+text = "Python is great"
+
+print(text[0:6])    # "Python"
+print(text[7:9])    # "is"
+print(text[-6:])    # "great"
+```
+
+-----
+
+### **`for` loop**
+
+Used to **iterate** (traverse) elements of a list, string, or other collection.
+
+```python
+for letter in "Python":
+    print(letter)
+
+fruits = ["apple", "pear", "grape"]
+for fruit in fruits:
+    print(fruit)
+```
+
+-----
+
+### **`range()` class**
+
+Generates a sequence of numbers, useful in `for` loops.
+
+```python
+for i in range(5):
+    print(i)  # Prints from 0 to 4
+
+for i in range(1, 6):
+    print(i)  # Prints from 1 to 5
+
+for i in range(0, 10, 2):
+    print(i)  # Prints 0, 2, 4, 6, 8
+```
+
+-----
+
+### **Lists**
+
+A list is an **ordered and mutable** collection of elements.
+
+```python
+numbers = [1, 2, 3, 4]
+names = ["Ana", "Luis", "Carlos"]
+mixed = [1, "text", 3.14]
+```
+
+-----
+
+### **Accessing list elements**
+
+Elements are accessed by their index, starting at `0`.
+
+```python
+fruits = ["apple", "pear", "grape"]
+
+print(fruits[0])   # "apple"
+print(fruits[-1])  # "grape" (last element)
+```
+
+-----
+
+### **Modifying list elements**
+
+You can change the value of an element by assigning a new one to its index.
+
+```python
+fruits = ["apple", "pear", "grape"]
+fruits[1] = "mango"
+print(fruits)  # ["apple", "mango", "grape"]
+```
+
+-----
+
+### **Adding elements to a list – `append()`**
+
+Adds an **element to the end** of the list.
+
+```python
+numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)  # [1, 2, 3, 4]
+```
+
+-----
+
+### **Inserting elements into a list – `insert()`**
+
+Adds an element at **a specific position**.
+
+```python
+names = ["Ana", "Luis", "Carlos"]
+names.insert(1, "Pedro")
+print(names)  # ["Ana", "Pedro", "Luis", "Carlos"]
+```
+
+-----
+
+### **Removing elements from a list – `pop()`**
+
+Removes an element by its position. If no index is specified, it removes the **last** one.
+
+```python
+colors = ["red", "green", "blue"]
+colors.pop(1)       # Removes "green"
+print(colors)       # ["red", "blue"]
+
+colors.pop()        # Removes "blue"
+print(colors)       # ["red"]
+```
+
+-----
+
+### **Removing elements from a list – `remove()`**
+
+Removes a **specific element** (by value, not by index). If the value does not exist, it raises an error.
+
+```python
+fruits = ["apple", "pear", "grape"]
+fruits.remove("pear")
+print(fruits)  # ["apple", "grape"]
+```
+
+-----
+
+### **Deleting a list – `del()`**
+
+Deletes **a variable or an entire list**.
+
+```python
+numbers = [1, 2, 3]
+del numbers
+# Now `numbers` no longer exists.
+```
+
+It can also be used to delete a single element:
+
+```python
+fruits = ["apple", "pear", "grape"]
+del fruits[1]
+print(fruits)  # ["apple", "grape"]
+```
+
+-----
+
+### **Reversing a list – `reverse()`**
+
+Reverses the order of elements in the same list.
+
+```python
+letters = ["a", "b", "c"]
+letters.reverse()
+print(letters)  # ["c", "b", "a"]
+```
+
+-----
+
+### **Sorting elements – `sort()`**
+
+Sorts elements from smallest to largest (or alphabetically).
+
+```python
+numbers = [3, 1, 4, 2]
+numbers.sort()
+print(numbers)  # [1, 2, 3, 4]
+
+names = ["Luis", "Ana", "Pedro"]
+names.sort()
+print(names)  # ["Ana", "Luis", "Pedro"]
+```
+
+To sort in reverse:
+
+```python
+names.sort(reverse=True)
+```
+
+-----
+
+### **Searching for elements in a list – `index()`**
+
+Returns the **index of the first element** that matches the value.
+
+```python
+colors = ["red", "green", "blue"]
+print(colors.index("green"))  # 1
+```
+
+-----
+
+### **Concatenating lists – `extend()`**
+
+Joins the elements of one list with another.
+
+```python
+list1 = [1, 2]
+list2 = [3, 4]
+
+list1.extend(list2)
+print(list1)  # [1, 2, 3, 4]
+```
+
+It can also be used with the `+` operator, but this creates a **new list**:
+
+```python
+new_list = list1 + list2
+```
+
+-----
+
+### **Summing list elements – `sum()`**
+
+Sums all numeric elements.
+
+```python
+numbers = [10, 20, 30]
+print(sum(numbers))  # 60
+```
+
+-----
+
+### **Building objects to a list**
+
+You can **convert other objects** (like strings, tuples, or ranges) into lists with `list()`.
+
+```python
+string_example = "hello"
+list_letters = list(string_example)
+print(list_letters)  # ['h', 'e', 'l', 'l', 'o']
+
+range_example = range(5)
+list_range = list(range_example)
+print(list_range)  # [0, 1, 2, 3, 4]
+```
+
+-----
+
+### **Nested lists**
+
+These are lists within other lists. You can access elements with multiple indices.
+
+```python
+data = [
+    ["Ana", 25],
+    ["Luis", 30],
+    ["Carlos", 22]
+]
+
+print(data[1])      # ["Luis", 30]
+print(data[1][0])   # "Luis"
+print(data[2][1])   # 22
+```
+
+-----
+
+### **Matrices with nested lists**
+
+Represented as lists within lists, each inner list is a row.
+
+```python
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[0][0])  # 1 (first row, first column)
+print(matrix[2][1])  # 8 (third row, second column)
+```
+
+You can iterate through the matrix with nested loops:
+
+```python
+for row in matrix:
+    for element in row:
+        print(element, end=" ")
+    print()  # Newline for each row
+```
+
+-----
+
+### **Matrices with `for` loop**
+
+You can iterate through a **matrix (list of lists)** with a **nested `for` loop**, row by row and then element by element:
+
+```python
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for row in matrix:
+    for element in row:
+        print(element, end=" ")
+    print()  # To add a new line at the end of each row
+```
+
+-----
+
+### **Matrix addition**
+
+To add two matrices of the same size, you add **element by element**.
+
+```python
+A = [
+    [1, 2],
+    [3, 4]
+]
+
+B = [
+    [5, 6],
+    [7, 8]
+]
+
+result = []
+
+for i in range(len(A)):
+    row = []
+    for j in range(len(A[0])):
+        sum_val = A[i][j] + B[i][j]
+        row.append(sum_val)
+    result.append(row)
+
+print(result)  # [[6, 8], [10, 12]]
+```
+
+-----
+
+### **Dictionaries**
+
+A **dictionary** in Python stores data in **key-value pairs**.
+
+```python
+person = {
+    "name": "Ana",
+    "age": 28,
+    "city": "San Jose"
+}
+```
+
+-----
+
+### **Accessing dictionary elements**
+
+You can access a value using the **key**:
+
+```python
+print(person["name"])  # Ana
+print(person.get("age"))  # 28
+```
+
+`get()` is safer because it doesn't raise an error if the key doesn't exist.
+
+-----
+
+### **`items()` method**
+
+Returns a **list of tuples** with all key-value pairs.
+
+```python
+for key, value in person.items():
+    print(key, "→", value)
+```
+
+-----
+
+### **`keys()` method**
+
+Returns only the **keys** of the dictionary:
+
+```python
+print(person.keys())  # dict_keys(['name', 'age', 'city'])
+```
+
+-----
+
+### **`values()` method**
+
+Returns only the **values** of the dictionary:
+
+```python
+print(person.values())  # dict_values(['Ana', 28, 'Cartago'])
+```
+
+-----
+
+### **`clear()` method**
+
+Deletes **all elements** from the dictionary:
+
+```python
+person.clear()
+print(person)  # {}
+```
+
+-----
+
+### **Modifying and adding elements to a dictionary**
+
+You can **modify** a value by assigning a new one to the key, or add a new key-value pair:
+
+```python
+person = {"name": "Ana", "age": 28}
+
+person["age"] = 30       # Modify
+person["profession"] = "Engineer"  # Add
+
+print(person)
+# {'name': 'Ana', 'age': 30, 'profession': 'Engineer'}
+```
+
+-----
+
+### **`copy()` method**
+
+Creates an **independent copy** of the dictionary.
+
+```python
+original = {"a": 1, "b": 2}
+copy_dict = original.copy()
+
+copy_dict["a"] = 99
+
+print(original)  # {'a': 1, 'b': 2}
+print(copy_dict)     # {'a': 99, 'b': 2}
+```
+
+-----
+
+### **`fromkeys()` method**
+
+Creates a dictionary with **defined keys** and a **same default value**.
+
+```python
+keys = ["name", "age", "city"]
+new_dict = dict.fromkeys(keys, "Not defined")
+
+print(new_dict)
+# {'name': 'Not defined', 'age': 'Not defined', 'city': 'Not defined'}
+```
+
+-----
+
+### **`get()` method**
+
+Accesses the value of a key **safely** (does not raise an error if the key does not exist).
+
+```python
+person = {"name": "Ana", "age": 28}
+
+print(person.get("age"))        # 28
+print(person.get("profession"))   # None
+print(person.get("profession", "Not available"))  # "Not available"
+```
+
+-----
+
+### **`popitem()` method**
+
+Removes and returns the **last key-value pair** from the dictionary.
+
+```python
+data = {"a": 1, "b": 2, "c": 3}
+last_item = data.popitem()
+
+print(last_item)  # ('c', 3)
+print(data)   # {'a': 1, 'b': 2}
+```
+
+-----
+
+### **`pop()` method with dictionary**
+
+Removes a **specific element** by key.
+
+```python
+person = {"name": "Ana", "age": 28}
+person.pop("age")
+
+print(person)  # {'name': 'Ana'}
+```
+
+You can also pass a default value if the key does not exist:
+
+```python
+person.pop("city", "Does not exist")  # No error
+```
+
+-----
+
+### **`setdefault()` method**
+
+  * If the **key exists**, it returns its value.
+  * If it **does not exist**, it creates it with a default value.
+
+<!-- end list -->
+
+```python
+person = {"name": "Ana"}
+person.setdefault("age", 30)
+
+print(person)  # {'name': 'Ana', 'age': 30}
+```
+
+-----
+
+### **`update()` method**
+
+Updates a dictionary with another dictionary or with key-value pairs.
+
+```python
+person = {"name": "Ana", "age": 28}
+person.update({"age": 30, "city": "San Jose"})
+
+print(person)
+# {'name': 'Ana', 'age': 30, 'city': 'San Jose'}
+```
+
+-----
+
+### **Tuples**
+
+A **tuple** is like a list, but **immutable** (cannot be modified after creation).
+
+```python
+colors = ("red", "green", "blue")
+```
+
+-----
+
+### **Accessing tuple elements**
+
+Accessed in the same way as lists, using indices.
+
+```python
+print(colors[0])  # "red"
+print(colors[-1]) # "blue"
+```
+
+-----
+
+### **Slicing operator in tuples**
+
+You can use **slicing** just like in strings or lists.
+
+```python
+numbers_tuple = (0, 1, 2, 3, 4, 5)
+
+print(numbers_tuple[1:4])   # (1, 2, 3)
+print(numbers_tuple[:3])    # (0, 1, 2)
+print(numbers_tuple[::2])   # (0, 2, 4)
+```
+
+-----
+
+### **Tuple unpacking**
+
+Allows **directly assigning** tuple values to variables.
+
+```python
+person_tuple = ("Ana", 28, "San Jose")
+name, age, city = person_tuple
+
+print(name)  # Ana
+print(age)    # 28
+print(city)  # San Jose
+```
+
+-----
+
+### **Immutability of a tuple**
+
+A **tuple is immutable**, meaning that you **cannot change, add, or delete** its elements after it has been created.
+
+```python
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 10  ❌ This will cause an error: TypeError
+```
+
+However, you can:
+
+  * Read its elements
+  * Perform slicing
+  * Convert it to a list to modify it, and then convert it back to a tuple
+
+-----
+
+### **`tuple()` function**
+
+Converts **another data type** (list, string, range, etc.) into a **tuple**.
+
+```python
+list_to_tuple = [1, 2, 3]
+tuple_from_list = tuple(list_to_tuple)
+print(tuple_from_list)  # (1, 2, 3)
+
+string_to_tuple = "hello"
+print(tuple(string_to_tuple))  # ('h', 'e', 'l', 'l', 'o')
+```
+
+-----
+
+### **Tuple concatenation**
+
+You can join two or more tuples using the `+` operator.
+
+```python
+a = (1, 2)
+b = (3, 4)
+c = a + b
+print(c)  # (1, 2, 3, 4)
+```
+
+-----
+
+### **The `zip()` function**
+
+Combines elements from several lists (or tuples) into **pairs**, forming a tuple for each position.
+
+```python
+names_zip = ("Ana", "Luis", "Pedro")
+ages_zip = (25, 30, 35)
+
+combined_zip = zip(names_zip, ages_zip)
+print(list(combined_zip))
+# [('Ana', 25), ('Luis', 30), ('Pedro', 35)]
+```
+
+-----
+
+### **Sets and the `set()` function**
+
+A **set** is an **unordered collection with no repeated elements**.
+
+```python
+my_set = set([1, 2, 2, 3])
+print(my_set)  # {1, 2, 3}
+
+# It can also be created like this:
+another_set = {4, 5, 6}
+```
+
+-----
+
+### **`issubset()` method**
+
+Returns `True` if **all elements** of one set are in another.
+
+```python
+a_set = {1, 2}
+b_set = {1, 2, 3, 4}
+
+print(a_set.issubset(b_set))  # True
+```
+
+-----
+
+### **`issuperset()` method**
+
+It's the opposite: returns `True` if the current set **completely contains** the other.
+
+```python
+b_set = {1, 2, 3, 4}
+a_set = {1, 2}
+
+print(b_set.issuperset(a_set))  # True
+```
+
+-----
+
+### **`union()` method**
+
+Returns a new set with **all elements**, **without duplicates**.
+
+```python
+a_set = {1, 2}
+b_set = {2, 3, 4}
+
+print(a_set.union(b_set))  # {1, 2, 3, 4}
+```
+
+-----
+
+### **`intersection()` method**
+
+Returns a set with the **common elements**.
+
+```python
+a_set = {1, 2, 3}
+b_set = {2, 3, 4}
+
+print(a_set.intersection(b_set))  # {2, 3}
+```
+
+-----
+
+### **`difference()` method**
+
+Returns the elements that are **in the first set but not in the second**.
+
+```python
+a_set = {1, 2, 3}
+b_set = {2, 3, 4}
+
+print(a_set.difference(b_set))  # {1}
+print(b_set.difference(a_set))  # {4}
+```
+
+-----
+
+### **`add()` method**
+
+Adds a **unique element** to the set.
+
+```python
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # {1, 2, 3, 4}
+```
+
+-----
+
+### **`update()` method**
+
+Adds **multiple elements** (from a list, tuple, or another set) to the set.
+
+```python
+my_set = {1, 2}
+my_set.update([3, 4], {5, 6})
+print(my_set)  # {1, 2, 3, 4, 5, 6}
+```
+
+-----
+
+### **`remove()` and `discard()` methods**
+
+  * `remove(x)` deletes element `x`, but **raises an error** if it does not exist.
+  * `discard(x)` deletes `x`, but **does not raise an error** if it is not present.
+
+<!-- end list -->
+
+```python
+my_set = {1, 2, 3}
+my_set.remove(2)   # OK
+# my_set.remove(5) # ❌ Error
+
+my_set.discard(5)  # ✅ No error even if 5 is not there
+```
+
+-----
+
+### **`enumerate()` function**
+
+Allows **iterating over a list or tuple** getting the **index and value** at the same time.
+
+```python
+fruits = ["apple", "pear", "grape"]
+
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+
+# 0 apple
+# 1 pear
+# 2 grape
+```
+
+-----
+
+### **`random` module**
+
+Allows generating **random numbers** and selecting elements randomly.
+
+Import:
+
+```python
+import random
+```
+
+Common functions:
+
+```python
+print(random.randint(1, 10))     # Random integer between 1 and 10
+print(random.random())           # Random float between 0.0 and 1.0
+print(random.choice(["a", "b", "c"]))  # Randomly chooses an element
+```
+
+-----
+
+### **Exception handling (`try` / `except`)**
+
+Used to **prevent the program from stopping** due to runtime errors.
+
+```python
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+    print("Result:", result)
+
+except ValueError:
+    print("Error: You must enter an integer.")
+
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
+
+finally:
+    print("End of program.")
+```
+
+  * `try`: block where an error might occur.
+  * `except`: block that handles the error.
+  * `finally`: block that always executes (optional, useful for cleaning up resources).
+
+<!-- end list -->
+
+```
+```
