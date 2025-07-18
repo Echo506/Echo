@@ -19,7 +19,7 @@ Here I share 💻 projects, ✨aspirations as a 👨‍💻 Systems Engineer, �
 | 🗄️ **SQL** | [Dive into my databases and SQL queries.](https://github.com/Echo506/Echo/blob/e85a55684e2b09d62a648306338ea4f40562fe34/SQL.md) |
 | 📊 **Splunk** | [Data analysis and security with Splunk.](https://github.com/Echo506/Echo/blob/725a097b370766d0d1117f2a7348d8f59784d546/Splunk.md)         |
 | ⚔️ **Metasploit** | [Tools and techniques for penetration testing.](https://github.com/Echo506/Echo/blob/c4798caf6abe33f08e8f20519dbdd81adf39f8ed/Metasploit.md) |
-| 🛡️ **Threat Intel** | [Learn about my work on threat intelligence (MITRE ATT&CK).](https://github.com/Echo506/Threat-Intelligence/blob/main/MITRE%20ATT%26CK.md) |
+| 🛡️ **Threat Intel** | [Learn about my work on threat intelligence (MITRE ATT&CK).](https://github.com/Echo506/Echo/blob/1137925ccb7f764947511e9056ecb4859f620ed6/MITRE%20ATT%26CK.md) |
 
 ---
 
