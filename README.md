@@ -27,9 +27,9 @@ Here I share 💻 projects, ✨aspirations as a 👨‍💻 Systems Engineer, �
 
 | Tool                     | Description                                                                                               |
 | :----------------------- | :-------------------------------------------------------------------------------------------------------- |
-| 🔒 **Infra-Sec-Check** | [Tool for infrastructure security verification.](https://github.com/Echo506/infra-sec-check) |
-| 🔎 **Offensive Scan Tool** | [My tool for offensive scanning.](https://github.com/Echo506/offensive-scan-tool)                             |
-| 🚨 **SSH Detector** | [Alert system for SSH detections.](https://github.com/Echo506/ssh-detector)                               |
+| 🔒 **Infra-Sec-Check** | [Tool for infrastructure security verification.](https://github.com/Echo506/Echo/blob/a722a204872f0f309d0e0c1922d7385367f62a9e/InfraSec.md) |
+| 🔎 **Offensive Scan Tool** | [My tool for offensive scanning.](https://github.com/Echo506/Echo/blob/a722a204872f0f309d0e0c1922d7385367f62a9e/OfficeScanTool.md) |
+| 🚨 **SSH Detector** | [Alert system for SSH detections.](https://github.com/Echo506/Echo/blob/a722a204872f0f309d0e0c1922d7385367f62a9e/SSHDetector.md)                               |
 
 ---
 
