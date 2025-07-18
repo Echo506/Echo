@@ -41,15 +41,3 @@ Aquí comparto 💻 proyectos, ✨aspiraciones como 👨‍💻 Ingeniero de Sis
 | 🇨🇳 **Chino** | [Mis avances y recursos en el idioma chino.](https://github.com/Echo506/Chinese/blob/master/GIT-Chinese.md)   |
 ```
 
-**Principales cambios y mejoras:**
-
-1.  **Cambio de usuario:** Todas las ocurrencias de `Gru11a` han sido reemplazadas por `Echo506`.
-2.  **Encabezados más descriptivos:** He usado encabezados de Markdown para una estructura más clara (`#`, `##`, `###`).
-3.  **Descripción de la imagen:** Agregué un `alt text` más descriptivo a la imagen principal.
-4.  **Enlace a LinkedIn más claro:** Convertí el texto de LinkedIn en un enlace de Markdown con un texto visible.
-5.  **Emojis y texto mejorado:** Mantuve los emojis y realicé pequeñas mejoras en la redacción para que suene más natural y atractiva en un perfil de GitHub.
-6.  **Uso de tablas de Markdown:** En lugar de `<table>` HTML para las imágenes de los proyectos, herramientas y lenguajes, utilicé tablas de Markdown para una mejor legibilidad y mantenimiento en GitHub. Cada celda ahora contiene un enlace descriptivo en lugar de solo la imagen.
-7.  **Separadores:** Agregué líneas horizontales (`---`) para una mejor separación visual entre las secciones.
-8.  **Descripción en las tablas:** Añadí una columna "Descripción" a las tablas para que los visitantes puedan entender de qué trata cada enlace sin tener que hacer clic en él.
-
-Este formato es más nativo de Markdown y se verá muy bien en un perfil de GitHub.
